@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gaming</title>
+	<link href='https://fonts.googleapis.com/css?family=Holtwood One SC' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<style type="text/css">
+	body{
+		background-image: url(https://vsthemes.ru/uploads/posts/2019-02/1551380215_jekrana-ot-2019-02-28-21-55-09.png);
+		background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+	}
+	.logo{
+		display: grid;
+		justify-content: center;
+		margin-top: 5%;
+	}
+	.container-fluid{
+		display: grid;
+		grid-template-columns: 1fr 4fr 1fr ;
+	}
+	.main{
+		display: grid;
+		grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+	}
+	.left{
+		display: grid;
+		align-items: center;
+		justify-content: center;
+	}
+	.right{
+		display: grid;
+		grid-template-rows: 1.5fr 1fr;
+		justify-content: center;
+		align-items: center;
+	}
+	.image_container{
+		position: relative;
+		text-align: center;
+		color: white;
+	}
+	.bottom-text{
+		position: absolute;
+		bottom:35%;
+		left: 33%;
+		font-size: 2vw;
+		font-family: 'Holtwood One SC';
+
+  background: -webkit-linear-gradient(-45deg, #ffffff 0%, #fef4b4 50%, #ffe747 50%, #ffe747 51%, #ffe747 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #ffffff), color-stop(50%, #fef4b4), color-stop(50%, #ffe747), color-stop(51%, #ffe747), color-stop(100%, #ffe747));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	}
+
+	.bottom-text-2{
+		position: absolute;
+		bottom:22%;
+		left: 33%;
+		font-size: 2vw;
+		font-family: 'Holtwood One SC';
+  background: -webkit-linear-gradient(-45deg, #ffffff 0%, #fef4b4 50%, #ffe747 50%, #ffe747 51%, #ffe747 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #ffffff), color-stop(50%, #fef4b4), color-stop(50%, #ffe747), color-stop(51%, #ffe747), color-stop(100%, #ffe747));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;}
+.info{
+	display: grid;
+	border:1px solid white;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	padding: 4%;
+}
+
+.info_text{
+	font-size: 2vw;
+	color: white;
+}
+
+.info_number{
+	font-size: 2.5vw;
+	color: #26f0ec;
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 3; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  list-style-type: none;
+	justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #232324;
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #888;
+  height: 50%;
+  width: 30%;
+
+}
+
+.modal-content ul{
+	align-self: center;
+	flex-direction: column;
+	margin-top: 10%;
+list-style-type: none;
+padding: 0;
+}
+.modal-content ul a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	flex-flow: wrap;
+	margin-top: 8%;
+	color: white;
+	text-decoration:none;
+	font-size: 20px;
+}
+/* The Close Button */
+.close {
+  color: white;
+  opacity: 0.9;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}
+button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: white;
+    font-size: 30px;
+    margin-top: 5%;
+}
+</style>
+<body>
+<div class="container-fluid">
+	<div class="logo">
+		<a href="../index.html"><img src="https://adrenalinerush.ru/static/img/logo-cyber-league.0f395fc.png" width="100%"></a>
+	</div>
+	<div class="main">
+		<div class="left">
+			<div class="image_container">
+			<img src="img/cyber_dota2_left-img.0930850.png" width="100%" >
+			<div class="bottom-text">DOTA 2</div>
+			<div class="bottom-text-2">SERIOUS GAME</div>
+		</div>
+		</div>
+		<div class="right">
+			<div class="twitch">
+				<iframe src="https://player.twitch.tv/?allowfullscreen&amp;channel=adrenalinecyber&amp;origin=https%3A%2F%2Fadrenalinerush.ru" width="100%" height="300px" frameborder="0" scrolling="no" allow="autoplay; fullscreen" allowfullscreen="">
+				</iframe>
+
+			</div>
+			<div class="info">
+				<div><span class="info_text">Дата проведения финалов:</span></div>
+				<div><span class="info_number">25.05.2019 - 26.05.2019</span></div>
+				<div><span class="info_text">Призовой фонд:</span></div>
+				<div><span class="info_number">$100 000</span></div>
+			</div>
+		</div>
+	</div>
+	<div class="menu">
+		<div class="menu">
+	  			<button id="modal_open"><i class="fas fa-bars"></i></button>
+	  		</div>
+	
+	</div>
+</div>
+	<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="
+	background-color: #232324; box-sizing: unset;">
+    
+    <ul>
+    	<li><a href="../signup/signup.html"><i class="fas fa-users"></i>&nbsp Sign-Up</a></li>
+    	<br>
+    	<li><a href="../signup/signin.html"><i class="fas fa-user-alt"></i>&nbsp Sign-In</a></li>
+    	<br>
+    	<li><a href="../order/order.html"><i class="fas fa-coins"></i>&nbsp Order</a></li>
+    	<br>
+    	<li><a href="../lifestyle/lifestyle.html"><i class="fas fa-check"></i>&nbsp Lifestyle</a></li>
+    </ul>
+    </div>
+
+    <span class="close"></span>
+</div>
+  
+ <script src="https://kit.fontawesome.com/a0fd7fe169.js" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="../js/script.js"></script>
+</body>
+</html>

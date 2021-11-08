@@ -1,0 +1,299 @@
+*{
+margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+
+}
+.section{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	overflow: hidden;
+	justify-content: center;
+  align-items: center;
+	align-content: center;
+	background-color: #000;
+}
+
+.main{
+	display: grid;
+	grid-template-columns: 1fr 4fr 1fr ;
+	width: 100%;
+	height: 100vh;
+}
+
+.main div{
+	width: 100% !important;
+	height: 100vh;
+	min-width: 0;
+}
+
+.main_section1, .main_section2 {
+	border-right: 1px solid grey;
+}
+
+.main_section1{
+display: grid;
+grid-template-rows: 1fr . . . . 1fr;
+}
+
+.main_section1 div{
+	width: 100%;
+	height: 100%;
+}
+.main_section1 .logo{
+	display: grid;
+	margin-top: 5%;
+ justify-content: center;
+ z-index: 2;
+ }
+.main_section1 .logo img{
+	max-width: 100%;
+	height: auto;
+}
+.main_section1 .gaming{
+	display: grid;
+	justify-content: center;
+	align-items: self-end;
+}
+
+.main_section1 .gaming a .gaming_word{
+	color: white;
+	font-size: 10px;
+	margin-left: 20%;
+}
+
+.main_section2{
+	display: grid;
+	grid-template-columns: . 2fr .;
+}
+
+
+.main_section2 div{
+	width: 100%;
+	height: 100%;
+}
+
+.slider{
+	z-index: 2;
+	display: grid;
+	grid-template-columns: 1fr 3fr 1fr;
+	justify-content: center;
+
+}
+
+.slider div{
+width: 100%;
+height: 100%;
+}
+
+#box{
+
+	display: grid;
+	justify-content: center;
+	align-content: space-around;
+	grid-template-columns: 1fr 2fr 1fr;
+
+}
+#box div{
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+#box img:hover{
+	margin-top:-30px;
+	-webkit-transition: margin-top 0.5s;
+}
+#box img{
+-webkit-transition: margin-top 0.5s;
+	width: 170px;
+	height: 420px;
+}
+
+.slider_button{
+	display: grid;
+	justify-content: center;
+}
+
+.slider_container{
+	display: grid;
+	justify-content: center;
+}
+
+.slider_image{
+	max-width: 100%;
+	height: auto;
+}
+.prew{
+		 	border: none;
+		 	background: transparent;
+		 	font-size: 40px;
+		 	color: white;file:///C:/Users/Moon/Desktop/WEB%20FINAL/index.html#
+		 	cursor: pointer;
+      opacity: 1;
+      z-index: 1;
+}
+
+.next{
+		 	border: none;
+		 	background: transparent;
+		 	font-size: 40px;
+		 	color: white;
+		 	cursor: pointer;
+      opacity: 1;
+      z-index: 1;
+    }
+
+
+.main_section3{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+}
+.main_section3 div{
+	width: 100%;
+	height: 100%;
+}
+.link_main{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.menu{
+	display: flex;
+	align-items: flex-start;
+	z-index: 2;
+}
+
+.menu button{
+	absolute; background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: white;
+    font-size: 25px;
+}
+.links{
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	align-self: flex-end;
+	z-index: 2;
+	font-size: 30px;
+}
+.links a{
+	color: white; 
+	margin-top: 25%;
+}
+
+.link_container{
+	display: grid;
+	grid-template-rows: 1fr 2fr;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+/*LOGO*/
+/*VIDEO*/
+.section video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	background:black;
+	z-index: 1;
+	opacity: 0.35;
+}
+/*SLIDER*/
+
+
+/*TEXTS*/
+
+.options button{
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    color: white;
+}
+
+
+/*LINKS*/
+
+/*MODAL FORM*/
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4);
+	z-index: 3;
+	justify-content: center;
+}
+
+/* Modal Content */
+.modal-content {
+	background-color: #232324;
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #888;
+  height: 50%;
+  width: 30%;
+
+}
+
+.modal-content ul{
+	display: flex;
+	align-self: center;
+	flex-direction: column;
+
+}
+.modal-content ul a{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-flow: wrap;
+	margin-top: 8%;
+	color: white;
+	text-decoration:none;
+	font-size: 20px;
+}
+/* The Close Button */
+.close {
+  color: white;
+  opacity: 0.9;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  opacity: 1;
+  text-decoration: none;
+  cursor: pointer;
+}

@@ -1,0 +1,93 @@
+	* {
+ 	 box-sizing: border-box;
+	}
+
+	body {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(150px, 30%));
+   		align-content: center;
+   		justify-content: center;
+   		align-items: stretch;
+      background-color: black;
+      color: white;
+	}
+
+	h1 {
+	  grid-column-end: span 2;
+      width: auto;
+      	  border-top-right-radius: 5px;
+	  border-top-left-radius: 5px;
+	  padding: 10px;
+	  font-size: 24px;
+	  line-height: 1.4;
+	  margin: 0;
+    border:1px solid white;
+	}
+   
+    .login {
+      display: grid;
+	  border-bottom-right-radius: 5px;
+	  border-bottom-left-radius: 5px;
+	  padding: 10px;
+	  margin-bottom: 10px;
+      grid-column-end: span 2;
+      width: auto;
+      border:1px solid white;
+    }
+
+    .login > div {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      grid-gap: 20px;
+      align-items: center;
+      padding: 5px 0;
+    }
+
+    .login > div.actions {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+    .account {
+      border-right: 1px dotted rgb(191, 216, 227);
+      padding: 0 10px 0 0;
+      align-self: end;
+      width: auto;
+    }
+    .contact {
+      padding: 0 0 0 10px;
+      width: auto;
+    }
+    input[type="button"] {
+      grid-column: 2;
+      text-decoration: none;
+      border-radius: 5px;
+	  color: #fff;
+	  background-color: grey;
+	  font-size: 110%;
+    }
+
+    input[type="text"],
+	input[type="password"],
+  input[type="email"]{
+      grid-column: 2;
+      padding: 5px;
+	  border-radius: 5px;
+	  font-size: 110%;
+	  width: 100%;
+    }
+    .actions a {
+      font-size: 80%;
+      align-self: end;
+      color: white;
+    }
+
+    .account a{
+     color: white;  
+    }
+
+    select{
+      grid-column: 2;
+      padding: 5px;
+    border-radius: 5px;
+    font-size: 110%;
+    width: 100%;
+    }

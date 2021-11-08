@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Adrenaline Rush</title>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+</head>
+<body>
+<div class="section">
+<video autoplay loop id="video-background" muted plays-inline>
+            <source src="video/ad_background.mp4" type="video/mp4">
+</video>
+<div class="main">
+	<div class="main_section1">
+		<div class="logo"><a href="#"><img src="img/logo.svg" width="120" height="70"></a></div>
+			<div class="gaming"><a href="#"><span class="gaming_word">GAMING</span> <br><img src="img/gaming.svg" width="70" height="70"></a></div>
+		</div>
+	<div class="main_section2">
+		<div class="slider">
+	    <div></div>
+			<div id="box">
+      <div class="slider_button">
+	    <button class="prew" onclick="prewImage()"><</button>
+			</div>	
+			<div class="slider_container" id="box_slider"><img class= "slider_image"  src="img/slider/black.png">
+      </div>
+      <div class="slider_button">
+ 		<button class="next" onclick="nextImage()">></button>
+</div>			
+			</div>
+			<div></div>
+		</div>
+	</div>
+	<div class="main_section3">
+	  <div></div>
+
+	  <div class="link_main">
+	  	<div ></div>
+	  	<div class="link_container">
+	  		<div class="menu">
+	  			<button id="modal_open" style="margin-top: 40%;"><i class="fas fa-bars"></i></button>
+	  		</div>
+	  		<div class="links">
+	  	<a href="#"><i class="fab fa-facebook"></i></a>
+			<a href="#"><i class="fab fa-google"></i></a>
+			<a href="#"><i class="fab fa-instagram"></i></a>
+				</div>
+				</div>	  
+	  </div>
+	</div>
+
+</div>
+</div>
+	<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content" style="
+	background-color: #232324; box-sizing: unset; padding: 50px;">
+    
+    <ul>
+    	<li><a href="signup/signup.html"><i class="fas fa-users"></i>&nbsp Sign-Up</a></li>
+    	<br>
+    	<li><a href="signup/signin.html"><i class="fas fa-user-alt"></i>&nbsp Sign-In</a></li>
+    	<br>
+    	<li><a href="order/order.html"><i class="fas fa-coins"></i>&nbsp Order</a></li>
+    	<br>
+ <li><a href="music/music.html"><i class="fas fa-play"></i>&nbsp Music</a></li>
+    	<br>   	
+    	<li><a href="lifestyle/lifestyle.html"><i class="fas fa-check"></i>&nbsp Lifestyle</a></li>
+    </ul>
+    </div>
+
+    <span class="close"></span>
+</div>
+  
+ <script src="https://kit.fontawesome.com/a0fd7fe169.js" crossorigin="anonymous"></script>
+ <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+</html>

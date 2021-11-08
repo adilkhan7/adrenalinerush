@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Order</title>
+	<link href='https://fonts.googleapis.com/css?family=Allerta' rel='stylesheet'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+		background-color: #e6e6e6;
+		font-family: 'Allerta';
+		font-size: 1.5vw;
+	}
+		.mycontainer{
+			display: grid;
+			grid-template-rows: 0.5fr 1fr 1fr 1fr 3fr 2fr;
+			margin: 2% 30%;
+     grid-gap: 20px;
+			background-color: white;
+			box-shadow: 0px 0px 10px 5px #b3b3b3;
+			padding: 2%;
+		}
+		.heading{
+ 		   font-size: 3vw;
+		}
+		.name{
+			display: grid;
+			grid-template-rows: 0.5fr 1.5fr;
+		}
+		.name_input{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 2fr;
+		}
+		.name_input p{
+			font-size: 0.8vw;
+			color: grey;
+			opacity: 0.85;
+		}
+		.name input{
+			width: 80%;
+		}
+
+		.email{
+			display: grid;
+			grid-template-rows: 0.5fr 1.5fr;
+		}
+
+		.email_input{
+			display: grid;
+			grid-template-rows: 1fr 2fr;
+		}
+		.email input{
+			width: 80%;
+		}
+		.email p{
+			font-size: 0.8vw;
+			color: grey;
+			opacity: 0.85;
+		}
+
+		.number{
+			display: grid;
+			grid-template-rows: 0.5fr 1.5fr
+		}
+
+		.number_input{
+			display: grid;
+			grid-template-columns: 1fr 0.2fr 1fr;
+			grid-template-rows: 1fr 2fr;
+		}
+		.number input{
+			width: 80%;
+			font-size: 1.2vw;
+		}
+		.number p{
+			font-size: 0.8vw;
+			color: grey;
+			opacity: 0.85;
+		}
+
+		.product{
+			display: grid;
+			grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
+		}
+
+		.product_detail{
+			display: grid;
+			grid-template-columns: 1fr 9fr;
+		}
+		.product_detail_main{
+			display: grid;
+			grid-template-rows: 1fr 0.5fr;
+
+		}
+	</style>
+</head>
+<body>
+<div class="mycontainer">
+	<div class="heading">Product Order<br><hr></div>
+
+		<div class="name">
+			<div>Full Name</div>
+			<div class="name_input">
+			<div><input type="text" name="name" ></div>
+			<div><input type="text" name="surname" ></div>
+			<p>First Name</p>
+			<p>Last Name</p>
+			</div>
+		</div>
+		<div class="email">
+			<div>E-mail</div>
+			<div class="email_input">
+				<div><input type="email" name="email"></div>
+				<div><p>example@example.com</p></div>
+			</div>
+		</div>
+		<div class="number">
+			<div>Contact Number</div>
+			<div class="number_input">
+				<input type="text" name="first"> <span>-</span> <input type="text" name="second">
+				<p>Area Code</p><p></p><p>Phone Number</p>
+			</div>
+		</div>
+		<div class="product">
+			<div>Products</div>
+			<div class="product_detail">
+				<div><img src="../img/slider/black.png" width="60%" height="80%"></div>
+				<div class="product_detail_main"><div>Energy Drink $1.00</div>
+				<div style="font-size: 0.8vw;
+			color: grey;
+			opacity: 0.85;">Quantity &nbsp<select id="can1">
+					<option>10</option>
+					<option>20</option>
+					<option>30</option>
+					<option>40</option>
+					<option>50</option>
+				</select></div>
+			</div>
+			</div>
+			<div class="product_detail">
+				<div><img src="../img/slider/blue-allbtns.png" width="60%" height="80%"></div>
+				<div class="product_detail_main"><div>Energy Drink $1.00</div>
+				<div style="font-size: 0.8vw;
+			color: grey;
+			opacity: 0.85;">Quantity &nbsp<select id="can2">
+					<option>10</option>
+					<option>20</option>
+					<option>30</option>
+					<option>40</option>
+					<option>50</option>
+				</select></div>
+			</div>
+			</div>
+			<div class="product_detail">
+				<div><img src="../img/slider/green-fps.png" width="60%" height="80%"></div>
+				<div class="product_detail_main"><div>Energy Drink $1.00</div>
+				<div style="font-size: 0.8vw;
+			color: grey;
+			opacity: 0.85;">Quantity &nbsp<select id="can3">
+					<option>10</option>
+					<option>20</option>
+					<option>30</option>
+					<option>40</option>
+					<option>50</option>
+				</select></div>
+			</div>
+			</div>
+			<div>Total Cost:$<span id="count">0.00</span>&nbsp &nbsp <button class="btn btn-secondary" onclick="math()">Calculate</button></div> 
+</div>
+<div style="display: grid; align-items: center;">
+<button class="btn btn-primary btn-block" >Pay Now</button>
+
+</div>
+</div>
+<script type="text/javascript">
+	function math() {
+		var e = document.getElementById("can1");
+var strUser = e.options[e.selectedIndex].text;
+
+		var e1 = document.getElementById("can2");
+var strUser1 = e1.options[e1.selectedIndex].text;
+
+	var e2 = document.getElementById("can3");
+var strUser2 = e2.options[e2.selectedIndex].text;
+
+	var count = parseInt(strUser) + parseInt(strUser1) + parseInt(strUser2);
+document.getElementById("count").innerHTML = count;
+	}	</script>
+</body>
+</html>
